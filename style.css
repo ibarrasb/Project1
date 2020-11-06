@@ -1,7 +1,18 @@
+
+.nav-wrapper{
+    background-color: #3f51b5 ;
+}
+
 h1 { 
-    color: green; 
+    color: #3f51b5;
+    text-align: center;
+    font-size: 15px;
 } 
-  
+
+.row {
+    font-size: 10px;
+}
+
 .buttonIn { 
     width: 300px; 
     position: relative; 
@@ -54,3 +65,7 @@ button {
     background-color: #1e90ff; 
     transform: translateX(2px); 
 } 
+
+.row{
+   margin-left: 100px;
+}
