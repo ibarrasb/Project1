@@ -31,18 +31,20 @@ searchButton.addEventListener("click", function(event){
     
     renderSongs();
     })
-
+    if(newButton){
     newButton.addEventListener("click", function(event){
         var song = event.target.dataset.song
         
         console.log(song);
-        // var queryURL = "";
-        // $.ajax({
-        //     url: queryURL,
-        //     method: "GET"
-        //   })
-        //     .then(function(response) {
-        //         var results = response;
-        //         console.log(results);
-        //     });
+        var queryURL = "";
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+          })
+            .then(function(response) {
+                var results = response;
+                console.log(results);
+            });
         });
+
+    }
