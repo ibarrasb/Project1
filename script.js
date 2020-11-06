@@ -1,6 +1,6 @@
 var searchBar = document.querySelector("#search-bar");
 var searchButton = document.querySelector("#search-button");
-var ListofSongs = document.querySelector("#song-list");
+var ListofSongs = document.querySelector("#artists");
 var newButton = document.querySelector("#song");
 
 var songList = [];
@@ -13,9 +13,10 @@ function renderSongs(){
         var song = songList[i];
         var listSong = document.createElement("button");
         listSong.textContent = song;
-        listSong.setAttribute("id", "song")
+        listSong.setAttribute("id", "song-list")
+        listSong.setAttribute("class", "appended-song")
         listSong.setAttribute("data-song", song)
-        CitiesList.appendChild(listSong);
+        ListofSongs.appendChild(listSong);
     }
 }
 
