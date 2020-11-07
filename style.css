@@ -1,18 +1,47 @@
 
-.nav-wrapper{
-    background-color: #3f51b5 ;
+body{
+    font-family: 'Big Shoulders Text', cursive,'Open Sans', sans-serif, 'Roboto';
 }
 
-h1 { 
+.nav-wrapper{
+    background-color: #ffffff ;
+    padding-bottom: 100px;
+  
+}
+img{
+    height: 150px;
+}
+
+.containersearch{
+    margin-top: 30px;
+}
+
+#searchsong { 
+    font-weight:  700;
     color: #3f51b5;
     text-align: center;
-    font-size: 15px;
+ 
+    font-size: 30px;
 } 
 
 .row {
     font-size: 10px;
 }
 
+.recentsongtiltle{
+    font-size: 10px;
+    color: blue;
+}
+
+.songs{
+ 
+    font-size: 18px;
+    
+}
+
+.songs:hover{
+    
+}
 .buttonIn { 
     width: 300px; 
     position: relative; 

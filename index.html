@@ -10,17 +10,20 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@300;400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
 <header>
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">Logo</a>
+            <img src="./images/logo.png" class="brand-logo center" alt="Fighter Music Logo"></img>
         </div>
     </nav>
 </header>
 
 <body>
-<<<<<<< HEAD
     <!--<div class="header-container">
         <h1>Music Search</h1>
         <div class="buttonIn">
@@ -34,70 +37,65 @@
         <div class="row">
             <form class="col s8">
                 <div class="row">
-                    <h1>Search Song</h1>
+                    <p id="searchsong">Search Song</p>
                     <div class="col s4"></div>
                     <div class="input-field col s8">
                         <input id="enter" type="text" class="validate">
                         <label for="icon_prefix">Enter A Song</label>
                         <button class="" id="clear">Search</button>
+
                     </div>
             </form>
         </div>
-=======
-    <div class="header-container">
-    <h1>Music Search</h1>
-    <div class="buttonIn"> 
-        <input type="text" id="search-bar"> 
-        <button id="search-button">Search</button> 
-    </div> 
-    </div>
-    <div class = "column" id="name-songs">
-        Recent Songs
-        <div id="song-list">
-            <ul id="artists"></ul>
-        </div>
-    </div>
-    <div class="row">
-        <div id="songname"></div>
-        <div id="artistname"></div>
-        <div id="year"></div>
-        <div id="songduration"></div>
-        <div id="singer"></div>
->>>>>>> 26cf536de7ee40f476e6f12d919e3a0b32e10f2c
     </div>
 
     <div class="row">
         <div class="col s4">
-        <ul class="collection">
-            <li class="collection-item avatar">
-                <img src="images/yuna.jpg" alt="" class="circle">
-                <span class="title">Song Title</span>
-                <p>Artist Name <br>
-                  Year
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-            </li>
+            <ul class="collection">
+                <label id="recentsongtiltle">Recent Searched Sogns</label>
+                <li class="collection-item avatar">
+                    <img src="images/yuna.jpg" alt="" class="circle">
+                    <span class="title">Song Title</span>
+                    <p>Artist Name <br>
+                        Year
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="images/yuna.jpg" alt="" class="circle">
+                    <span class="title">Song Title</span>
+                    <p>Artist Name <br>
+                        Year
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
             </ul>
         </div>
         <div class="videocontainer">
             <div class="row">
                 <div class="col s12 m7">
-                  <div class="card">
-                    <div class="card-image">
-                      <img src="images/sample-1.jpg">
-                      <span class="card-title">Card Title</span>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Your Songs</span>
+                            <ul class="collection">
+                                <li class="songs">1st Song Name</li>
+                                <li class="songs">2nd Song name</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="card-content">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/49pYIMygIcU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/49pYIMygIcU" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                     <div class="card-action">
                         <a class="waves-effect waves-light btn">Play</a>
                         <a class="waves-effect waves-light btn">Pause</a>
                         <a class="waves-effect waves-light btn">Next</a>
                     </div>
-                  </div>
+
                 </div>
-              </div>
+            </div>
 
 
         </div>
