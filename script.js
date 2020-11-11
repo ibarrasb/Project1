@@ -9,31 +9,37 @@ var searchButton = document.querySelector(".search-button");
 // Adding an event listener for the search button
 searchButton.addEventListener("click", function(event){
     event.preventDefault();
-    var userInput = searchBar.value.trim();
-    if(userInput === ""){
+    //Gets response from user from the search bar 
+    var songInput = searchBar.value.trim();
+    if(songInput === ""){
         return;
     }
-     
-    console.log(userInput);
+    //displays users input 
+    console.log(songInput);
+})
 
-    // var queryURL = "";
-    // $.ajax({
-    //     url: queryURL,
-    //     method: "GET"
-    //   })
-    //     .then(function(response) {
+
+
+
+
+// function getMusic(songInput){
+    
+//     // var queryURL = "";
+//     // $.ajax({
+//     //     url: queryURL,
+//     //     method: "GET"
+//     //   })
+//     //     .then(function(response) {
             
-    //         console.log(response);
-    //     });
+//     //         console.log(response);
+//     //     });
 
 
    
-    // searchBar.value = "";
+//     // searchBar.value = "";
     
     
-    })
-
-
+//     }
 
 
    
