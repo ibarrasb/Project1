@@ -12,9 +12,7 @@ body{
     height: 200px;
 }
 
-h1 {
-    font-size: 12px;
-}
+
 
 .containersearch{
     margin-top: 80px;
@@ -24,6 +22,14 @@ h1 {
     text-align: center;
     color: #eceff1;
     padding: 40px;
+}
+
+/*Background Image*/
+
+#imagebackground{
+    height: 300px; 
+    width: 100%;
+
 }
 
 /*container for the search button and the field*/
@@ -41,6 +47,7 @@ h1 {
    height: 30px; 
    border-radius: 10px;
    border-color: #eceff1;
+   width:300px;
 }
 
 /*search button*/
@@ -61,8 +68,6 @@ h1 {
     
 }
 
-
-
 .appended-song{
 
     position: relative;
@@ -78,5 +83,65 @@ h1 {
 }
 
 
-  
+ /* Media Screens*/
+ @media only screen and (max-width: 768px){
+     #imagebackground{
+      margin-left: 26px;
+     }
+     #inputbutton{
+        margin-left: 180px;
+     }
+ }
 
+ @media only screen and (max-width: 480px){
+
+    #imagebackground{
+    margin-left: 0px;
+    height: 200px;
+  
+    }
+    #inputbutton{
+       margin-left: 30px;
+       
+    }
+    #searchinput{
+        width: 200px;
+
+    }
+    #title {
+        font-size: 40px;
+    }
+    .containersearch{
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 540px){
+
+    #title {
+        font-size: 40px;
+        margin-left: 100px;
+    }
+    #inputbutton{
+        margin-left: 160px;
+        
+     }
+    
+
+    
+    #imagebackground{
+        margin-left: 0px;
+        height: 200px;
+      
+        }
+        #searchinput{
+            width: 180px;
+    
+        }
+        .containersearch{
+            margin-top: 90px;
+        }
+        #logo{
+            margin-left: 40px;
+        }
+}
