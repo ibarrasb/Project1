@@ -16,27 +16,26 @@ searchButton.addEventListener("click", function(event){
     }
     //displays users input 
     console.log(songInput);
+
+    getMusic(songInput);
+
 })
+//Retrives information from API
+function getMusic(songInput){
 
-
-
-
-
-// function getMusic(songInput){
-    
-//     // var queryURL = "";
-//     // $.ajax({
-//     //     url: queryURL,
-//     //     method: "GET"
-//     //   })
-//     //     .then(function(response) {
+    // var queryURL = "526794d12f7e4bd3b39e65679085a6be";
+    // $.ajax({
+    //     url: queryURL,
+    //     method: "GET"
+    //   })
+    //     .then(function(response) {
             
-//     //         console.log(response);
-//     //     });
+    //         console.log(response);
+    //     });
 
 
    
-//     // searchBar.value = "";
+    // searchBar.value = "";
     
     
 //     }
