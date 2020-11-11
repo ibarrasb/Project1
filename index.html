@@ -24,16 +24,28 @@
 </header>
 
 <body>
-    <div class="row containersearch">
-        <br>
-        <div class="card-image" id="imagebackground" style="background-image: url('./images/music-1631175-1599x1333.jpg'); height: 300px; width: 100%;">
-            <h1> Get Your Favorite Music</h1>
-            <div class ="row" id="inputbutton">
-                <div class="col m12 m7">
-                <input id="searchinput" type="text" style="width:300px;" placeholder="Enter A Song">
-                <button class="btn blue-grey lighten-5" id="buttoninp" type="submit">Search</button>
-                </div>
-            </div>
+    <!--<div class="header-container">
+        <h1>Music Search</h1>
+        <div class="buttonIn">
+            <input type="text" id="enter">
+            <button id="clear">Search</button>
+        </div>
+    </div>
+    </div>
+-->
+    <div class="containersearch">
+        <div class="row">
+            <form class="col s8">
+                <div class="row">
+                    <p id="searchsong">Search Song</p>
+                    <div class="col s4"></div>
+                    <div class="input-field col s8">
+                        <input id="search-bar" type="text" class="validate">
+                        <label for="icon_prefix">Enter A Song</label>
+                        <button class="search-button" id="clear">Search</button>
+
+                    </div>
+            </form>
         </div>
     </div>
 
