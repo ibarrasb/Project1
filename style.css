@@ -215,6 +215,7 @@ h1 {
     #logo{
             margin-left: 40px;
         }
+<<<<<<< HEAD
 
     .collection-result{
             margin-left: 15px;
@@ -252,4 +253,9 @@ h1 {
         }
         
         
+=======
+}
+.pointer-events-none{
+    pointer-events: none;
+>>>>>>> 8768b489ef604bc4ebca36d44ea2cc6ee8d5c978
 }
