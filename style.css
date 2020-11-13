@@ -1,6 +1,7 @@
 
 body{
     font-family: 'Big Shoulders Text', cursive,'Open Sans', sans-serif, 'Roboto';
+ 
 }
 
 .nav-wrapper{
@@ -156,64 +157,99 @@ h1 {
     text-align: center;
 }
  /* Media Screens*/
+
+
+
+
+ @media only screen and (max-width: 937px){
+
+    #inputbutton{
+        margin-left: 200px;
+     }
+ }
+
+
  @media only screen and (max-width: 768px){
      #imagebackground{
-      margin-left: 26px;
+      margin-left: 0px;
      }
      #inputbutton{
         margin-left: 180px;
      }
+     .playlist{
+        width: 30%;
+    }
+    .result-display{
+        width: 105px;
+    }
  }
 
- @media only screen and (max-width: 480px){
-
-    #imagebackground{
-    margin-left: 0px;
-    height: 200px;
-  
-    }
-    #inputbutton{
-       margin-left: 30px;
-       
-    }
-    #searchinput{
-        width: 200px;
-
-    }
-    #title {
-        font-size: 40px;
-    }
-    .containersearch{
-        margin-top: 100px;
-    }
-}
-
+ 
 @media only screen and (max-width: 540px){
 
     #title {
         font-size: 40px;
-        margin-left: 100px;
+        margin-left: 30px;
     }
-    #inputbutton{
-        margin-left: 160px;
+
+    #search-button{
+        margin-left: 20px;  
         
      }
     
-
-    
     #imagebackground{
-        margin-left: 0px;
+        margin-left: 15px;
         height: 200px;
       
         }
-        #searchinput{
+
+    #search-bar{
             width: 180px;
-    
+            margin-left: -60px;  
         }
-        .containersearch{
+
+    .containersearch{
             margin-top: 90px;
-        }
-        #logo{
+    }
+            
+    #logo{
             margin-left: 40px;
         }
+
+    .collection-result{
+            margin-left: 15px;
+        }
+ 
+        
+        @media only screen and (max-width: 480px){
+
+            #imagebackground{
+            margin-left: 0px;
+            height: 200px;
+          
+            }
+            #search-button{
+               margin-left: 30px;
+               
+            }
+            #search-bar{
+                width: 200px;
+        
+            }
+            #title {
+                font-size: 40px;
+            }
+            .containersearch{
+                margin-top: 100px;
+            }
+            .playlist{
+                width: 100%;
+            }
+            iframe {
+                width: 100% !important
+            }
+
+        }
+        
+        
 }
