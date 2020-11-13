@@ -3,6 +3,7 @@
 var searchBar = document.querySelector("#search-bar");
 var searchButton = document.querySelector("#search-button");
 var songListResult = document.querySelector("#song-list");
+var resultSongsCon = document.querySelectorAll("#result-song")
 
 //RECENT SONG ARRAY ON LEFT
 var SongResults = [];
@@ -31,6 +32,7 @@ searchButton.addEventListener("click", function(event){
         return;
     }
     SongResults.push(songInput);
+    console.log()
 
 
     //displays users input 
@@ -87,7 +89,7 @@ function getSong(songInput){
 
                         })
 
-            }
+            };
 
 // songListResult.addEventListener("click", function(event){
 //         event.preventDefault();
@@ -95,3 +97,23 @@ function getSong(songInput){
 
 //         console.log(getSong(song))
 //     })
+
+// Playist Queue 
+
+
+for (var i = 0; i < resultSongsCon.length; i++) {
+    console.log(resultSongsCon[i])
+  resultSongsCon[i].onclick = function getSong(event){
+    event.preventDefault();
+    event.stopPropagation();
+    // var SongQueue = event.target.songListResult
+    console.dir(event.target)
+    
+    var children = event.target.children
+    console.dir (children[0].textContent)
+  
+    var songName = children[0].textContent
+    var artistName = children[2].textContent
+  }
+}
+
