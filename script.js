@@ -1,8 +1,15 @@
+$(document).ready(function(){
+    jQuery.ajaxPrefilter(function(options) {
+        if (options.crossDomain && jQuery.support.cors) {
+            options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+        }
+    });
 // Declaring variables for code. 
 
 var searchBar = document.querySelector("#search-bar");
 var searchButton = document.querySelector("#search-button");
 var songListResult = document.querySelector("#song-list");
+var clearButton = document.querySelector("#clear-search");
 
 //RECENT SONG ARRAY ON LEFT
 var SongResults = [];
@@ -37,6 +44,41 @@ searchButton.addEventListener("click", function(event){
     console.log(songInput);
     getSong(songInput);
 });
+getLyrics();
+
+
+function getLyrics(){
+
+    var songName = "freestyle";
+    var songArtist = "lil baby";
+
+var queryURL = "http://www.stands4.com/services/v2/lyrics.php?uid=8254&tokenid=l09o1M2aypBkjILh&term="+songName+"&artist="+songArtist+"&format=json";
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+        .then(function(response) {
+    
+            var results = response;
+
+            console.log(results);
+        
+    
+    
+    
+    
+            
+          
+        });
+    }
+
+
+
+    
+
+
+
+
 
 
 function getSong(songInput){
@@ -49,16 +91,24 @@ function getSong(songInput){
 })
 .then(response => response.json())
 .then(response => {
+   
+var song = response;
 
-    
- var song = response;
+console.log(song.response.hits)
 
-    console.log(song.response.hits)
+searchResults();
 
-    searchResults();
+// clearButton.addEventListener("click", function(){
+//     document.querySelector(".collection-result").removeAttribute("class", "hide")
+
+//     })
+//Hides button if nothing is searched
+if(song){
+document.querySelector(".collection-result").removeAttribute("class", "hide")
+ }
 
     function searchResults(){ 
-        // document.querySelector(".collection-result").setAttribute("class", "hide")
+        
     //song 1 result
     var songName1 = document.querySelector(".inside-name1");
     songName1.innerHTML = song.response.hits[0].result.title;
@@ -83,11 +133,14 @@ function getSong(songInput){
     song3pic.src = song.response.hits[2].result.song_art_image_thumbnail_url;
     var ArtistName3 = document.querySelector(".artist-name3");
     ArtistName3.innerHTML = song.response.hits[2].result.primary_artist.name;
-                        }
 
-                        })
+    
+     }
+})
 
-            }
+ }
+
+//https://www.stands4.com/services/v2/lyrics.php?uid=8254&tokenid=l09o1M2aypBkjILh&term=[SONG NAME]&artist=[ARTIST NAME]&format=json
 
 // songListResult.addEventListener("click", function(event){
 //         event.preventDefault();
@@ -95,3 +148,4 @@ function getSong(songInput){
 
 //         console.log(getSong(song))
 //     })
+})
