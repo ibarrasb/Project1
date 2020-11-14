@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fighter Music | Karaoke</title>
+    <title>Fighter Music | Create Your Playlist</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -21,6 +21,7 @@
     <nav>
         <div class="nav-wrapper">
             <img id="logo" src="./images/logo.png" class="brand-logo center" alt="Fighter Music Logo"></img>
+        
         </div>
     </nav>
 </header>
@@ -30,38 +31,39 @@
         <br>
         <div class="card-image" id="imagebackground"
             style="background-image: url('./images/music-1631175-1599x1333.jpg');">
-            <h1 id="title"> Get Your Favorite Music</h1>
+            <h1 id="title"> Get Your Favorite Artist Music</h1>
             <div class="row" id="inputbutton">
                 <div class="col m12 m7">
-                    <input id="search-bar" type="text" placeholder="Enter A Song">
+                    <input id="search-bar" type="text" placeholder="Enter Artist Name">
                     <button class="btn blue-grey lighten-5" id="search-button" type="submit">Search</button>
                 </div>
             </div>
         </div>
     </div>
         <div class="row blue-grey lighten-5">
-            <div class="col s4">
-                <ul class="collection">
-                    <label id="recentsongtil">Recent Searched Sogns</label>
-                    <li class="collection-item avatar">
-                        <img src="images/yuna.jpg" alt="" class="circle">
-                        <span class="title">Song Title</span>
-                        <p>Artist Name <br>
-                            Year
+            <div class="col l4 playlist" >
+                <p id="list">Your Playlist</p>
+                <ul class="collection" >
+                    <label id="recentsongtil center" ></label>
+                    <li class=" playlist-item collection-item avatar purple darken-4" >
+                        <img src="https://images.genius.com/c19be4658b521a31855ece45084ffb63.180x184x1.png" alt="" class="circle">
+                        <span class="title center" style="text-align: center;">Livin's La Vida Loca</span>
+                        <p>Ricky Martin <br>
+    
                         </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        <button class="secondary-content"style="color: #4a148c">Remove</button>
                     </li>
-                    <li class="collection-item avatar">
-                        <img src="images/yuna.jpg" alt="" class="circle">
-                        <span class="title">Song Title</span>
-                        <p>Artist Name <br>
-                            Year
+                    <li class="playlist-item collection-item avatar purple darken-4">
+                        <img src="https://images.genius.com/0c3d8f9ed50897bcad170fa38483aa18.300x299x1.png" alt="" class="circle">
+                        <span class="title">Vente Pa'ca</span>
+                        <p>Ricky Martin<br>
+                            
                         </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        <button class="remove secondary-content" style="color: #4a148c" >Remove</button>
                     </li>
                 </ul>
             </div>
-            <div class="videocontainer">
+            <!-- <div class="videocontainer"> -->
                 <div class="row">
                     <div class="col s12 m7" >
                         <div class="card" id="results-container">
@@ -71,6 +73,7 @@
                                 </span>
                                
                                 <!-- EVERYTHING WITHIN COLLECTION RESULT DO NOT CHANGE -->
+<<<<<<< HEAD
                                 <ul class="collection-result hide" id="song-list">
                                     <button class="result-display" id="result-song" data-song="1">
                                         <p class="inside-name1"></p>
@@ -87,22 +90,40 @@
                                         <img id="cover-art3" class="cover" src="">
                                         <p class="artist-name3"></p>
                                     </button>
+=======
+                                <ul class="collection-result" id="song-list"> 
+                                    <li class="result-display center" id="result-song" data-song="1">
+                                        <p class="inside-name1 pointer-events-none center"></p>
+                                        <img id="cover-art1" class="cover pointer-events-none center" src="">
+                                        <p class="artist-name1 pointer-events-none center"></p>
+                                        <br>
+                                        <p class="addplaylist">Add Playlist</p>
+                                    </li>
+                                    <li class="result-display center" id="result-song" data-song="2">
+                                        <p class="inside-name2 pointer-events-none center"></p>
+                                        <img id="cover-art2" class="cover pointer-events-none center" src="">
+                                        <p class="artist-name2 pointer-events-none center"></p>
+                                        <br>
+                                        <p class="addplaylist">Add Playlist</p>
+                                    </li>
+                                    <li class="result-display center" id="result-song" data-song="3">
+                                        <p class="inside-name3 pointer-events-none center"></p>
+                                        <img id="cover-art3" class="cover pointer-events-none center" src="">
+                                        <p class="artist-name3 pointer-events-none center"></p>
+                                        <br>
+                                        <p class="addplaylist">Add Playlist</p>
+                                    </li>
+>>>>>>> 5e84f002dac1f9cdd9ebad37ec32bf6fd231fe46
 
 
                                 </ul>
                             </div>
                         </div>
-                        <div class="card-content">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/49pYIMygIcU"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                        <div class="card-content" id="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/p47fEXGabaY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                        <div class="card-action">
-                            <a class="btn purple darken-4" id="play" style="width: 100px;">Play<i class="fas fa-play" style="margin-left: 5px;"></i></a>
-                            <a class="btn purple darken-4" id="pause" style="width: 100px;">Pause<i class="fas fa-pause" style="margin-left: 5px;"></i></a>
-                           
-                        </div>
+                    
+                
 
                     </div>
                 </div>
@@ -119,13 +140,12 @@
 <footer class="page-footer" id="footer">
     <div class="container" >
       <div class="row">
-          <h5 class="" id="footer-text">Fighter Music</h5>
           <br>
         </div>
     </div>
     <div class="footer-copyright" id="footercopyrigth">
       <div class="container">
-      © 2020 Figher Music
+      © 2020 Fighter Music
      
       </div>
     </div>
