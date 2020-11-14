@@ -1,10 +1,10 @@
 # Fighter Music
-Cutting edge music web application, allows you to search, play, and sing your favorite music.
+Cutting edge music web application, allows you to search, create playlist and listen to  your favorite artists.
 
 
 **Criteria provider by the client:**
 
-Our customer wanted to have an application where it can search for music and create it owns playlist.
+Our customer wanted to have an application where it can search for an artist. See the top three albums, and create it owns playlist. At the same time render a video from the searched artist.
 
 ```
 WHEN enter an artist on the search area show three recents artist album
@@ -24,10 +24,9 @@ WOULD like to store my playlist or clear it to create a new one
 * From the playlist select an artist/album, a video of the artist will show up
 
 # Mockup:
-![SEARHC](./images/Weather_Screenshot2.png)
-![RESULTS](./images/Weather_Screenshot1.png)
-![PLAYLIST]
-![VIDEO]
+![Desktop](./images/Desktop_View.png)
+![Mobile](./images/Mobile_View.png)
+
 
 
 
@@ -43,9 +42,17 @@ WOULD like to store my playlist or clear it to create a new one
 * Genius API
 * ADD SECONF API HERE
 
+# Tasks/Resposabilities:
+* Janliz Surea (github id: CivicaJR91): Front-End / Design
+* Jose Valdez (github id: jayjay2397) : Back-End
+* Eddie Ibarra (github id: ibarrasb): Back-End
+
+
+
 # Repository:
 
-* Repository: 
+* Repository: https://github.com/ibarrasb/Project1
+
 * Page Link: 
-* Presentation: https://drive.google.com/file/d/1FZpKpLHruifuib9YIqqoFHo19Drbz3yD/view?usp=sharing
+* Presentation: https://drive.google.com/file/d/1dGSt-uOPAPUka9ILKlb24WtKibQ4WAyn/view?usp=sharing
 
