@@ -52,7 +52,6 @@ WOULD like to store my playlist or clear it to create a new one
 # Repository:
 
 * Repository: https://github.com/ibarrasb/Project1
-
-* Page Link: 
+* Page Link: https://ibarrasb.github.io/Project1/
 * Presentation: https://drive.google.com/file/d/1dGSt-uOPAPUka9ILKlb24WtKibQ4WAyn/view?usp=sharing
 
