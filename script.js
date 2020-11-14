@@ -15,19 +15,7 @@ var resultSongsCon = document.querySelectorAll("#result-song")
 //RECENT SONG ARRAY ON LEFT
 var SongResults = [];
 
-// function renderResults() {
-//     songListResult.innerHTML = " ";
 
-//     //for loop to iterate through the list of cities
-//     // Want to delete Song Results with every search
-//    for(var i =0; i< SongResults.length; i++){
-//        var song = SongResults[i];
-//        var li = document.createElement("div");
-//        li.textContent = song;
-//        li.setAttribute("class", "result-display")
-//        songListResult.appendChild(li);
-//    }
-// }
 
 
 // Adding an event listener for the search button
@@ -46,9 +34,19 @@ searchButton.addEventListener("click", function(event){
     console.log(songInput);
     getSong(songInput);
 });
+
+
+
+
+
+
+
+
+
+
+
+
 getLyrics();
-
-
 function getLyrics(){
 
     var songName = "freestyle";
@@ -142,16 +140,6 @@ document.querySelector(".collection-result").removeAttribute("class", "hide")
 
  }
 
-//https://www.stands4.com/services/v2/lyrics.php?uid=8254&tokenid=l09o1M2aypBkjILh&term=[SONG NAME]&artist=[ARTIST NAME]&format=json
-            };
-
-// songListResult.addEventListener("click", function(event){
-//         event.preventDefault();
-//         var song = event.target.dataset.song;
-
-//         console.log(getSong(song))
-//     })
-
 
 // Playist Queue 
 
@@ -168,7 +156,34 @@ for (var i = 0; i < resultSongsCon.length; i++) {
     console.dir (children[0].textContent)
   
     var songName = children[0].textContent
+    var songCover = children[1].textContent
     var artistName = children[2].textContent
+
+
+
+
+
+
+
+
+    // function renderResults() {
+    //     songListResult.innerHTML = " ";
+    
+        
+       
+    //    for(var i =0; i< SongResults.length; i++){
+    //        var song = SongResults[i];
+    //        var li = document.createElement("li");
+    //     //    li.textContent = song;
+    //        li.setAttribute("class", "result-display")
+    //        songListResult.appendChild(li);
+    //    }
+    // }
+
+
+
+
   }
 }
 
+});
